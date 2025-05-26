@@ -1,0 +1,25 @@
+{
+  "name": "developer-portfolio",
+  "version": "1.0.0",
+  "description": "> ## 🚧 This project is currently under development 🚧",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrBubblez/developer-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DrBubblez/developer-portfolio/issues"
+  },
+  "homepage": "https://github.com/DrBubblez/developer-portfolio#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  }
+}
