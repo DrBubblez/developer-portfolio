@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/DrBubblez/developer-portfolio/issues"
   },
-  "homepage": "https://github.com/DrBubblez/developer-portfolio#readme"
+  "homepage": "https://github.com/DrBubblez/developer-portfolio#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  }
 }
