@@ -1,5 +1,4 @@
 /*! tailwindcss v4.1.7 | MIT License | https://tailwindcss.com */
-@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -7,13 +6,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-amber-400: oklch(82.8% 0.189 84.429);
-    --color-amber-700: oklch(55.5% 0.163 48.998);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-9xl: 8rem;
-    --text-9xl--line-height: 1;
+    --color-neutral-800: oklch(26.9% 0 0);
+    --color-white: #fff;
+    --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -95,7 +90,7 @@
   }
   img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
-    /*vertical-align: middle;*/
+    vertical-align: middle;
   }
   img, video {
     max-width: 100%;
@@ -164,52 +159,34 @@
   }
 }
 @layer utilities {
-  .table {
-    display: table;
+  .ml-7 {
+    margin-left: calc(var(--spacing) * 7);
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .flex {
+    display: flex;
   }
-  .resize {
-    resize: both;
+  .h-20 {
+    height: calc(var(--spacing) * 20);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
+  .h-25 {
+    height: calc(var(--spacing) * 25);
   }
-  .bg-amber-400 {
-    background-color: var(--color-amber-400);
+  .w-20 {
+    width: calc(var(--spacing) * 20);
   }
-  .text-9xl {
-    font-size: var(--text-9xl);
-    line-height: var(--tw-leading, var(--text-9xl--line-height));
+  .w-screen {
+    width: 100vw;
   }
-  .text-red-500 {
-    color: var(--color-red-500);
+  .items-center {
+    align-items: center;
   }
-  .underline {
-    text-decoration-line: underline;
+  .justify-between {
+    justify-content: space-between;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
+  .bg-white {
+    background-color: var(--color-white);
   }
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
-    *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
-      --tw-outline-style: solid;
-    }
-  }
+body {
+  background-color: #222222;
 }
