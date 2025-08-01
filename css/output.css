@@ -15,10 +15,14 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
     --font-weight-light: 300;
     --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
     --radius-4xl: 2rem;
@@ -172,6 +176,12 @@
   }
 }
 @layer utilities {
+  .fixed {
+    position: fixed;
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mr-7 {
     margin-right: calc(var(--spacing) * 7);
   }
@@ -183,6 +193,9 @@
   }
   .h-20 {
     height: calc(var(--spacing) * 20);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
   }
   .h-25 {
     height: calc(var(--spacing) * 25);
@@ -205,6 +218,12 @@
   .flex-1 {
     flex: 1;
   }
+  .flex-1\/2 {
+    flex: calc(1/2 * 100%);
+  }
+  .grow {
+    flex-grow: 1;
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -219,6 +238,9 @@
   }
   .justify-evenly {
     justify-content: space-evenly;
+  }
+  .justify-items-center {
+    justify-items: center;
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
@@ -270,12 +292,34 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .pt-24 {
+    padding-top: calc(var(--spacing) * 24);
+  }
+  .pr-32 {
+    padding-right: calc(var(--spacing) * 32);
+  }
+  .pl-2\.5 {
+    padding-left: calc(var(--spacing) * 2.5);
+  }
+  .pl-32 {
+    padding-left: calc(var(--spacing) * 32);
+  }
+  .text-center {
+    text-align: center;
+  }
   .font-\[Open_Sans\] {
     font-family: Open Sans;
   }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-8xl {
     font-size: var(--text-8xl);
@@ -284,6 +328,9 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[1\.2rem\] {
+    font-size: 1.2rem;
   }
   .font-light {
     --tw-font-weight: var(--font-weight-light);
