@@ -11,12 +11,13 @@
         <script src="../js/app.js" defer></script>
     </head>
     <body class="bg-[url(../images/black-mesh-bg.jpg)] bg-contain bg-repeat-round bg-fixed flex flex-col h-screen font-[Open_Sans]">
-        <nav class="flex w-full h-25 bg-white items-center justify-between">
-            <a href="./index.html"><img src="../images/logo_transparent.png" alt="My Logo" class="w-20 h-20 ml-7"></a>
-            <ul class="flex space-x-10 mr-7">
-                <li><a href="about.html" class="text-xl hover:text-neutral-400 hover:underline hover:underline-offset-7">About Me</a></li>
-                <li><a href="https://github.com/drbubblez" target="_blank" class="text-xl hover:text-neutral-400 hover:underline hover:underline-offset-7">Projects</a></li>
-                <li><a href="https://forms.gle/oAwZAiWfgYGjZbpp7" target="_blank" class="text-xl hover:text-neutral-400 hover:underline hover:underline-offset-7">Contact</a></li>
+        <nav class="flex w-full h-24 bg-white items-center justify-between sticky">
+            <img src="../images/logo_transparent.png" alt="My Logo" class="w-20 h-20 ml-7">
+            <ul role="menubar" class="flex space-x-10 mr-7" id="menu">
+                <li role="none"><a id="nav-link" role="menuitem" href="./index.html" class="text-xl hover:text-neutral-400 hover:underline hover:underline-offset-7">Home</a></li>
+                <li role="none"><a id="nav-link" role="menuitem" href="./about.html" class="text-xl hover:text-neutral-400 hover:underline hover:underline-offset-7">About Me</a></li>
+                <li role="none"><a role="menuitem" href="https://github.com/drbubblez" target="_blank" class="text-xl hover:text-neutral-400 hover:underline hover:underline-offset-7">Projects</a></li>
+                <li role="none"><a role="menuitem" href="https://forms.gle/oAwZAiWfgYGjZbpp7" target="_blank" class="text-xl hover:text-neutral-400 hover:underline hover:underline-offset-7">Contact</a></li>
             </ul>
         </nav>
         <main class="flex flex-1 justify-evenly items-center">

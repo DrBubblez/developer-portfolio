@@ -197,9 +197,6 @@
   .h-24 {
     height: calc(var(--spacing) * 24);
   }
-  .h-25 {
-    height: calc(var(--spacing) * 25);
-  }
   .h-50 {
     height: calc(var(--spacing) * 50);
   }
@@ -355,6 +352,12 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .underline-offset-7 {
+    text-underline-offset: 7px;
   }
   .hover\:text-neutral-400 {
     &:hover {
