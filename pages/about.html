@@ -13,14 +13,32 @@
     </head>
     <body class="bg-[url(../images/black-mesh-bg.jpg)] bg-contain bg-repeat-round bg-fixed flex flex-col justify-between h-screen font-[Open_Sans]">
         <nav class="flex w-full h-24 bg-white items-center justify-between sticky">
-            <img src="../images/logo_transparent.png" alt="My Logo" class="w-20 h-20 ml-7">
-            <ul id="menu" role="menubar" class="flex space-x-10 mr-7">
+            <img role="img" src="../images/logo_transparent.png" alt="My Logo" class="w-20 h-20 ml-7">
+            <button id="mobile-menu-btn" role="button" class="md:hidden block p-2 cursor-pointer active:opacity-25">
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+            <ul id="desktop-menu" role="menubar" class="flex space-x-10 mr-7 max-md:hidden">
                 <li role="none"><a id="nav-link" role="menuitem" href="./index.html" class="text-xl hover:text-neutral-400 hover:underline hover:underline-offset-7">Home</a></li>
                 <li role="none"><a id="nav-link" role="menuitem" href="./about.html" class="text-xl hover:text-neutral-400 hover:underline hover:underline-offset-7">About Me</a></li>
                 <li role="none"><a role="menuitem" href="https://github.com/drbubblez" target="_blank" class="text-xl hover:text-neutral-400 hover:underline hover:underline-offset-7">Projects</a></li>
                 <li role="none"><a role="menuitem" href="https://forms.gle/oAwZAiWfgYGjZbpp7" target="_blank" class="text-xl hover:text-neutral-400 hover:underline hover:underline-offset-7">Contact</a></li>
             </ul>
         </nav>
+        <div id="mobile-menu" role="navigation" class="fixed top-0 right-0 h-fit w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 md:hidden z-50">
+            <button id="close-btn" role="button" class="md:hidden block p-2 cursor-pointer active:opacity-25">
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                </svg>
+            </button>
+            <ul role="menubar" class="flex flex-col pb-5 space-y-6 items-center">
+                <li role="none"><a id="nav-link" role="menuitem" href="./index.html" class="text-xl hover:underline hover:underline-offset-7 active:text-neutral-400">Home</a></li>
+                <li role="none"><a id="nav-link" role="menuitem" href="./about.html" class="text-xl hover:underline hover:underline-offset-7 active:text-neutral-400">About Me</a></li>
+                <li role="none"><a role="menuitem" href="https://github.com/drbubblez" target="_blank" class="text-xl hover:underline hover:underline-offset-7 active:text-neutral-400">Projects</a></li>
+                <li role="none"><a role="menuitem" href="https://forms.gle/oAwZAiWfgYGjZbpp7" target="_blank" class="text-xl hover:underline hover:underline-offset-7 active:text-neutral-400">Contact</a></li>
+            </ul>
+        </div>
         <main class="flex px-32 gap-5 items-center text-white">
             <section class="basis-1/2 justify-items-center">
                 <h2 class="text-5xl">About Me</h2>
